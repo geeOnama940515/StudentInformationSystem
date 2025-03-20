@@ -1,5 +1,8 @@
 using Microsoft.EntityFrameworkCore;
+using SQLitePCL;
 using StudentIS.Models;
+
+Batteries.Init();
 
 var builder = WebApplication.CreateBuilder(args);
 

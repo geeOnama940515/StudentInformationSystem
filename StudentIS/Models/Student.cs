@@ -16,4 +16,7 @@ public class Student
 
         [Required]
         public string Section { get; set; }
+
+        [Phone]
+        public string ContactNumber { get; set; }
 }
