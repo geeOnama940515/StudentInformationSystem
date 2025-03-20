@@ -1,0 +1,18 @@
+﻿@model StudentInfoSystem.Models.Student
+
+<h2>Add Student</h2>
+<form asp-action="Create">
+    <label>Name:</label>
+    <input asp-for="FullName" class="form-control" required />
+
+    <label>Grade Level:</label>
+    <input asp-for="GradeLevel" type="number" class="form-control" required />
+
+    <label>Section:</label>
+    <input asp-for="Section" class="form-control" required />
+
+    <label>Contact Number:</label>
+    <input asp-for="ContactNumber" type="tel" class="form-control" required />
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
