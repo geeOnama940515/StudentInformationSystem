@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddControllersWithViews();
 
 builder.Services.AddDbContext<StudentDBContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("DB")));
+    options.UseSqlite(builder.Configuration.GetConnectionString("DB")));
 
 var app = builder.Build();
 
